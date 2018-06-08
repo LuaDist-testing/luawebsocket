@@ -1,11 +1,11 @@
 -- This file was automatically generated for the LuaDist project.
 
 package = "luawebsocket"
-version = "1.0.0-0"
+version = "1.0.0-1"
 
 -- LuaDist source
 source = {
-  tag = "1.0.0-0",
+  tag = "1.0.0-1",
   url = "git://github.com/LuaDist-testing/luawebsocket.git"
 }
 -- Original source
@@ -33,16 +33,16 @@ external_dependencies = {
 
 build = {
 	type = "builtin",
-		modules = {
-			websocket = {
-				sources = {
-					"base64.c",
-					"websocket.c",
-					"luawebsocket.c"
-				},
-				libraries = {"ssl", "crypto"},
-				incdirs = {"$(OPENSSL_INCDIR)"},
-				libdirs = {"$(OPENSSL_LIBDIR)"}
+	modules = {
+		websocket = {
+			sources = {
+				"base64.c",
+				"websocket.c",
+				"luawebsocket.c"
+			},
+			libraries = {"ssl", "crypto"},
+			incdirs = {"$(OPENSSL_INCDIR)"},
+			libdirs = {"$(OPENSSL_LIBDIR)"}
 		}
 	},
 	platforms = {
